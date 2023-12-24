@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "playertracker",
+	"version": "${version}",
+	"name": "playercounter",
+	"description": "A mod that tracks players on the server",
+	"authors": [
+		"2Lynk"
+	],
+	"contact": {
+		"homepage": "https://2lynk.dev/",
+		"sources": "https://modrinth.com/mod/player-tracker"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/playercounter/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"lynk.dev.Playertracker"
+		],
+		"fabric-datagen": [
+			"lynk.dev.PlayertrackerDataGenerator"
+		]
+	},
+	"mixins": [],
+	"depends": {
+		"fabricloader": ">=0.15.3",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
